@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.StudentRegistration">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_margin="@dimen/spacing_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:gravity="center_horizontal"
+                    android:id="@+id/rg_admin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:padding="@dimen/spacing_large"
+                        android:background="@drawable/edittext_border"
+                        android:id="@+id/rb_admin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Admin"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_normal_size" />
+                    <RadioButton
+                        android:layout_marginStart="@dimen/spacing_middle"
+                        android:padding="@dimen/spacing_large"
+                        android:background="@drawable/edittext_border"
+                        android:id="@+id/rb_teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Teacher"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_normal_size" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+          <LinearLayout style="@style/ll_TextBox">
+
+                 <EditText
+                    android:id="@+id/et_adminRegistration_name"
+                    style="@style/et_TextBox"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="text"
+                    android:hint="@string/name" />
+            </LinearLayout>
+            <LinearLayout style="@style/ll_TextBox">
+
+              <EditText
+                    android:id="@+id/et_adminRegistration_phone"
+                    style="@style/et_TextBox"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="phone"
+                    android:hint="@string/phone" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_admin_register"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_margin="@dimen/spacing_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_btn_size"
+                android:background="@drawable/radius_bth"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

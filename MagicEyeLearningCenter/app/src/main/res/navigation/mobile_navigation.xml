@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.magiceye.learningcenter.ui.mycourse.MyCourseFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_mycourse" >
+        <action
+            android:id="@+id/action_navigation_home_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.magiceye.learningcenter.ui.catalog.CatalogFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.magiceye.learningcenter.ui.profile.ProfileFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="com.magiceye.learningcenter.ui.mycourse.ChooseFragment"
+        android:label="Choose">
+        <action
+            android:id="@+id/action_tutorialFragment_to_linkFragment"
+            app:destination="@id/linkFragment" />
+        <action
+            android:id="@+id/action_tutorialFragment_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+        <action
+            android:id="@+id/action_tutorialFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.magiceye.learningcenter.ui.mycourse.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <action
+            android:id="@+id/action_contentFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkFragment"
+        android:name="com.magiceye.learningcenter.ui.mycourse.LinkFragment"
+        android:label="Links" />
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.magiceye.learningcenter.ui.mycourse.PdfFragment"
+        android:label="PDF" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.magiceye.learningcenter.ui.mycourse.VideoFragment"
+        android:label="Videos" />
+</navigation>

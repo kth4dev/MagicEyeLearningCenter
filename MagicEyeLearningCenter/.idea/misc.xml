@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/activity_phone_no_verify.xml" value="0.1" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/fragment_content.xml" value="0.1" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/fragment_mycourse.xml" value="0.19444444444444445" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/item_course.xml" value="0.1" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/item_course_content.xml" value="0.15" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/item_link.xml" value="0.1" />
+        <entry key="..\:/Android (Complete Project)/Magic Eye ( User + Admin )/MagicEyeLearningCenter/app/src/main/res/layout/item_video.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

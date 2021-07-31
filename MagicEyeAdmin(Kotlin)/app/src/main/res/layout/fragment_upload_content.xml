@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_large"
+    tools:context=".ui.course.UploadCourseFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_uploadContent_courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_middle"
+        android:fontFamily="@font/montserrat_regular"/>
+
+    <EditText
+        android:id="@+id/et_uploadContent_contentName"
+        style="@style/et_TextBox"
+        android:layout_gravity="top"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/Content"
+        android:inputType="text" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_middle">
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/visible"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_uploadContent"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_uploadContent_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="True"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal_size" />
+                    <RadioButton
+                        android:id="@+id/rb_uploadContent_false"
+                        android:layout_marginStart="@dimen/spacing_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="False"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal_size" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_uploadContent"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="@dimen/spacing_large"
+        android:paddingEnd="@dimen/spacing_large"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_margin="@dimen/spacing_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_btn_size"
+        android:background="@drawable/radius_bth"
+        android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pb_uploadContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

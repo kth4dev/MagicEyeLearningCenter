@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_feedback"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:padding="15dp"
+            >
+            <LinearLayout
+                android:padding="@dimen/spacing_large"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/magic_eye_logo"
+                    android:layout_margin="15dp"
+                    android:layout_width="220dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="150dp"
+                    />
+                <TextView
+                    android:fontFamily="@font/montserrat_regular"
+                    android:id="@+id/appName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="@string/nav_header_title"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="@string/nav_header_subtitle"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="Version 1.0"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

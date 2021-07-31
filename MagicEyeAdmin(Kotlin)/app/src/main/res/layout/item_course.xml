@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_middle"
+    android:layout_marginStart="@dimen/spacing_middle"
+    android:layout_marginEnd="@dimen/spacing_middle">
+    <RelativeLayout
+        android:background="@drawable/edittext_border"
+        android:padding="@dimen/spacing_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_course_main"
+            android:layout_toStartOf="@id/iv_course_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_course_active"
+                android:layout_marginEnd="@dimen/spacing_middle"
+                android:id="@+id/iv_course_indicator"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/montserrat_regular"
+                android:id="@+id/tv_course_name"
+                android:layout_toEndOf="@id/student_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/font_normal_size"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <ImageView
+            android:paddingStart="@dimen/spacing_middle"
+            android:paddingEnd="@dimen/spacing_middle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_course_menu"
+            android:src="@drawable/ic_edit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

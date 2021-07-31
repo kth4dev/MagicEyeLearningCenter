@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "719274574069",
+    "firebase_url": "https://magiceyelearningcenter-aa59e.firebaseio.com",
+    "project_id": "magiceyelearningcenter-aa59e",
+    "storage_bucket": "magiceyelearningcenter-aa59e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719274574069:android:b370ba5c79f725f42845bc",
+        "android_client_info": {
+          "package_name": "com.magiceye.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719274574069-e25cql6cagtk1b4u4ddciroemdd72ict.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magiceye.admin",
+            "certificate_hash": "7118e3e57d5650f0ed0c9b71263175e4fab37a6e"
+          }
+        },
+        {
+          "client_id": "719274574069-uobc07coubrbo33ci65htjct2c0klsao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXFP-32G6or1bXMx0NHantmCOaTSGyFYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719274574069-uobc07coubrbo33ci65htjct2c0klsao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719274574069:android:b366144ca22d1b962845bc",
+        "android_client_info": {
+          "package_name": "com.magiceye.learningcenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719274574069-omvhagq747044vlq43pcf9eksjm8r1qm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magiceye.learningcenter",
+            "certificate_hash": "7118e3e57d5650f0ed0c9b71263175e4fab37a6e"
+          }
+        },
+        {
+          "client_id": "719274574069-uobc07coubrbo33ci65htjct2c0klsao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXFP-32G6or1bXMx0NHantmCOaTSGyFYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719274574069-uobc07coubrbo33ci65htjct2c0klsao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

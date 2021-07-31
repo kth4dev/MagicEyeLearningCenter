@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.StudentRegistration">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Spinner
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/spinner_studentRegistration_course"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_middle"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_middle"/>
+            <LinearLayout style="@style/ll_TextBox">
+
+                <ImageView
+                    style="@style/img_TextBox"
+                    android:src="@drawable/ic_name" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="6dp"/>
+                <EditText
+                    android:id="@+id/et_studentRegistration_name"
+                    style="@style/et_TextBox"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="text"
+                    android:hint="@string/name" />
+            </LinearLayout>
+            <LinearLayout style="@style/ll_TextBox">
+
+                <ImageView
+                    style="@style/img_TextBox"
+                    android:src="@drawable/ic_phone" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="6dp"/>
+                <EditText
+                    android:id="@+id/et_studentRegistration_phone"
+                    style="@style/et_TextBox"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="phone"
+                    android:hint="@string/phone" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_register"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_margin="@dimen/spacing_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_btn_size"
+                android:background="@drawable/radius_bth"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

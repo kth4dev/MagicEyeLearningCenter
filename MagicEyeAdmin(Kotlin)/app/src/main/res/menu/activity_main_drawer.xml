@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/gp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@drawable/ic_nav_course"
+            android:title="@string/course" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_nav_admin"
+            android:title="@string/menu_admin" />
+    </group>
+
+    <group
+        android:id="@+id/gp"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settingFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_setting" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/menu_about" />
+
+   </group>
+</menu>

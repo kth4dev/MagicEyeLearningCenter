@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mycourse.MyCourseFragment"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/pb_catalog"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_margin="@dimen/spacing_large"
+        android:background="@drawable/search_bar_border"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:layout_toStartOf="@+id/search_icon"
+            style="@style/et_TextBox"
+
+            android:hint="@string/hint_search"/>
+        <ImageView
+            android:padding="5dp"
+            android:background="@drawable/search_icon_border"
+            android:src="@drawable/ic_search"
+            android:id="@+id/search_icon"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

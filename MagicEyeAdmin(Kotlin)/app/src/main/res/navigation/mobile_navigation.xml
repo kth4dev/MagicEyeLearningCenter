@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.magiceye.admin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_student_registration"
+            app:destination="@id/student_registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_registration"
+        android:name="com.magiceye.admin.ui.home.StudentRegistration"
+        android:label="Student Registration"
+        tools:layout="@layout/fragment_student_registration" />
+
+    <fragment
+        android:id="@+id/nav_course"
+        android:name="com.magiceye.admin.ui.course.CourseFragment"
+        android:label="@string/course"
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_nav_course_to_uploadCourseFragment"
+            app:destination="@id/uploadCourseFragment" />
+        <action
+            android:id="@+id/action_nav_course_to_contentFragment"
+            app:destination="@id/contentFragment" />
+        <action
+            android:id="@+id/action_nav_course_to_editCourseFragment"
+            app:destination="@id/editCourseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="com.magiceye.admin.ui.admin.AdminFragment"
+        android:label="Admin"
+        tools:layout="@layout/fragment_admin">
+        <action
+            android:id="@+id/action_nav_admin_to_adminRegistrationFragment"
+            app:destination="@id/adminRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadCourseFragment"
+        android:name="com.magiceye.admin.ui.course.UploadCourseFragment"
+        android:label="Upload Course"
+        tools:layout="@layout/fragment_upload_course" />
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.magiceye.admin.ui.course.ContentFragment"
+        android:label="Content"
+        tools:layout="@layout/fragment_content">
+        <action
+            android:id="@+id/action_contentFragment_to_uploadContentFragment"
+            app:destination="@id/uploadContentFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_editContentFragment"
+            app:destination="@id/editContentFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadContentFragment"
+        android:name="com.magiceye.admin.ui.course.UploadContentFragment"
+        android:label="Upload Content" />
+    <fragment
+        android:id="@+id/editCourseFragment"
+        android:name="com.magiceye.admin.ui.course.EditCourseFragment"
+        android:label="EditCourseFragment" >
+        <action
+            android:id="@+id/action_editCourseFragment_to_nav_course"
+            app:destination="@id/nav_course"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/editContentFragment"
+        android:name="com.magiceye.admin.ui.course.EditContentFragment"
+        android:label="EditContentFragment" >
+        <action
+            android:id="@+id/action_editContentFragment_to_contentFragment"
+            app:destination="@id/contentFragment"
+            app:popUpTo="@id/nav_course" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.magiceye.admin.ui.course.VideoFragment"
+        android:label="Video List"
+        tools:layout="@layout/fragment_video">
+        <action
+            android:id="@+id/action_videoFragment_to_uploadVideoFragment"
+            app:destination="@id/uploadVideoFragment" />
+        <action
+            android:id="@+id/action_videoFragment_to_editVideoFragment"
+            app:destination="@id/editVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadVideoFragment"
+        android:name="com.magiceye.admin.ui.course.UploadVideoFragment"
+        android:label="Upload Video" />
+    <fragment
+        android:id="@+id/editVideoFragment"
+        android:name="com.magiceye.admin.ui.course.EditVideoFragment"
+        android:label="EditVideoFragment" >
+        <action
+            android:id="@+id/action_editVideoFragment_to_videoFragment"
+            app:destination="@id/videoFragment"
+            app:popUpTo="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkFragment"
+        android:name="com.magiceye.admin.ui.course.LinkFragment"
+        android:label="Link"
+        tools:layout="@layout/fragment_link" >
+        <action
+            android:id="@+id/action_linkFragment_to_uploadLinkFragment"
+            app:destination="@id/uploadLinkFragment" />
+        <action
+            android:id="@+id/action_linkFragment_to_editLinkFragment"
+            app:destination="@id/editLinkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.magiceye.admin.ui.course.PdfFragment"
+        android:label="Pdf List"
+        tools:layout="@layout/fragment_pdf">
+        <action
+            android:id="@+id/action_pdfFragment_to_uploadPdfFragment"
+            app:destination="@id/uploadPdfFragment" />
+        <action
+            android:id="@+id/action_pdfFragment_to_editPdfFragment"
+            app:destination="@id/editPdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadLinkFragment"
+        android:name="com.magiceye.admin.ui.course.UploadLinkFragment"
+        android:label="Upload Link" />
+    <fragment
+        android:id="@+id/uploadPdfFragment"
+        android:name="com.magiceye.admin.ui.course.UploadPdfFragment"
+        android:label="Upload Pdf" />
+    <fragment
+        android:id="@+id/editPdfFragment"
+        android:name="com.magiceye.admin.ui.course.EditPdfFragment"
+        android:label="EditPdfFragment" >
+        <action
+            android:id="@+id/action_editPdfFragment_to_pdfFragment"
+            app:destination="@id/pdfFragment"
+            app:popUpTo="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editLinkFragment"
+        android:name="com.magiceye.admin.ui.course.EditLinkFragment"
+        android:label="EditLinkFragment" >
+        <action
+            android:id="@+id/action_editLinkFragment_to_linkFragment"
+            app:destination="@id/linkFragment"
+            app:popUpTo="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminRegistrationFragment"
+        android:name="com.magiceye.admin.ui.admin.AdminRegistrationFragment"
+        android:label="AdminRegistrationFragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.magiceye.admin.ui.setting.SettingFragment"
+        android:label="@string/menu_setting">
+        <action
+            android:id="@+id/action_settingFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.magiceye.admin.ui.setting.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="com.magiceye.admin.ui.course.ChooseFragment">
+        <action
+            android:id="@+id/action_chooseFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_chooseFragment_to_linkFragment"
+            app:destination="@id/linkFragment" />
+        <action
+            android:id="@+id/action_chooseFragment_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.magiceye.admin.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+
+</navigation>

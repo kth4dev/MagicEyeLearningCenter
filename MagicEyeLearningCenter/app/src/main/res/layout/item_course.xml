@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    android:layout_margin="@dimen/spacing_middle">
+    <RelativeLayout
+        android:id="@+id/rl_course_main"
+        android:background="@drawable/edittext_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/course_name"
+            android:layout_toStartOf="@id/course_arrow_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_large"
+            android:textSize="@dimen/font_normal_size"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/colorPrimary"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacing_middle"
+            android:id="@+id/course_arrow_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_arrow"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
